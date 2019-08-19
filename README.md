@@ -1,8 +1,3 @@
-## 脚手架
-```
-    项目最低兼容ie9
-```
-
 ### 项目技术栈 （环境）
 ```
    架构 ：Vue2.X全家桶 Vue-cli3 node10.X+ webpack 4.X + babel 7.X
@@ -22,4 +17,29 @@
 ### 项目打包
 ```
 npm run build
+```
+## 兼容性配置
+```
+    项目兼容: 配置 browserslistrc文件
+```
++ 兼容ie9
+```javascript
+> 1%
+last 3 versions
+not ie <= 8 
+```
++ 兼容ie11
+```javascript
+> 1%
+last 2 versions
+not ie <= 10
+```
++ 查看当前项目的兼容
+```javascript
+npx browserslist
+```
++ 如遇到 ie 报错 
+```javascript
+打开控制台查看不兼容的语法
+打开babel.config.js 配置 presets--> polyfills 在里面添加转换插件 
 ```
