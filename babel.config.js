@@ -1,5 +1,11 @@
 module.exports = {
     presets: [
+        ['@vue/app', {
+            polyfills: [
+                'es6.promise',
+                'es6.object.assign'
+            ]
+        }],
         ["@babel/preset-env", {
             "useBuiltIns": "usage", // entry or "usage"
             "corejs": 3,
