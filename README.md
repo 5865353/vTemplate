@@ -30,5 +30,9 @@ npx browserslist
 ```javascript
 打开控制台查看不兼容的语法
 打开babel.config.js 配置 presets--> polyfills 在里面添加转换插件 
-vue-cli 脚手架 默认使用的是core-js 2 [查看文档配置](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/babel-preset-app#polyfills)
+vue-cli 脚手架 默认使用的是core-js 2 
 ```
++ 查看文档配置
+    + [github]((https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/babel-preset-app#polyfills))
+    + [vue-cli](https://cli.vuejs.org/zh/guide/browser-compatibility.html#usebuiltins-usage)
+    + [babel](https://babeljs.io/docs/en/babel-preset-env)
