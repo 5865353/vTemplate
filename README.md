@@ -22,18 +22,6 @@ npm run build
 ```
     项目兼容: 配置 browserslistrc文件
 ```
-+ 兼容ie9
-```javascript
-> 1%
-last 3 versions
-not ie <= 8 
-```
-+ 兼容ie11
-```javascript
-> 1%
-last 2 versions
-not ie <= 10
-```
 + 查看当前项目的兼容
 ```javascript
 npx browserslist
