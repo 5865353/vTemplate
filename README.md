@@ -33,6 +33,6 @@ npx browserslist
 vue-cli 脚手架 默认使用的是core-js 2 
 ```
 + 查看文档配置
-    + [github]((https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/babel-preset-app#polyfills))
+    + [github](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/babel-preset-app#polyfills)
     + [vue-cli](https://cli.vuejs.org/zh/guide/browser-compatibility.html#usebuiltins-usage)
     + [babel](https://babeljs.io/docs/en/babel-preset-env)
