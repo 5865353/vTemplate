@@ -78,9 +78,18 @@ module.exports = {
     },
     devServer: {
         // 开发环境下 服务器配置
-        port: 8080,
+        port: 3000,
         disableHostCheck: true,
-    },
-    // ui 工具如果不是用的 ant-design 可删除下面这行
-    transpileDependencies: ["_ant-design-vue@1.3.13@ant-design-vue", "ant-design-vue"]
+        proxy: {
+            '/api': {
+                target: 'http://192.168.0.18:99',
+                ws: false,
+                changeOrigin: true,
+                // 重写地址
+                pathRewrite:{
+                    '^/api':'echarts'
+                }
+            }
+            }
+    }
 }

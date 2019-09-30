@@ -54,7 +54,6 @@ service.interceptors.request.use(config => {
             ...config.params
         }
     }
-
     return config
 }, (error) => {
     return Promise.reject(error)
