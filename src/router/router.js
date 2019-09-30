@@ -21,13 +21,13 @@ const router = new Router({
             redirect: '/user/signIn',
             children: [
                 {
-                    path: 'signUp',
-                    name: 'singUp',
+                    path: 'register',
+                    name: 'register',
                     component: () => import(/* webpackChunkName: "users" */ '@/views/users/register')
                 },
                 {
-                    path: 'signIn',
-                    name: 'signIn',
+                    path: 'login',
+                    name: 'login',
                     component: () => import(/* webpackChunkName: "users" */ '@/views/users/login')
                 }
             ]
